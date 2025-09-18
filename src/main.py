@@ -1,11 +1,11 @@
 from PySide6.QtWidgets import QApplication
 import sys
 
-from buttonHolder import ButtonHolder
+from MainWindow import MainWindow
 
 app = QApplication(sys.argv)
 
-window = ButtonHolder()
+window = MainWindow(app)
 
 window.show()
 
