@@ -52,8 +52,7 @@ class MainWindow(QMainWindow):
         button.clicked.connect(self.buttonClicked)
         toolBar.addWidget(button)
 
-        
-
+    
     def buttonClicked(self, state):
         inputText = self.bonusInput.text()
 

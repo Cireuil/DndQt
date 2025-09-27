@@ -1,7 +1,13 @@
 import requests
 import sys
+import os
 
-url_DNS = "https://f307e5b0-69d8-4621-b2ec-3395aedfe928-00-3pw0ady9xg5l1.picard.replit.dev"
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+url_DNS = os.getenv("DNS")
 url_endPoint = "diceResult/"
 
 def rollDice(characterName : str, nbDice : int, limit : int, bonus : int, type : str):
